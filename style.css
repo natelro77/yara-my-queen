@@ -1,0 +1,93 @@
+:root {
+  --font-display: 'Dancing Script', cursive;
+  --font-body: 'Quicksand', sans-serif;
+  --background-dark: #0f0f14;
+  --accent-pink: #f6c1d1;
+  --text-white: #f8f6f2;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-body);
+  background: var(--background-dark);
+  color: var(--text-white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+h1 {
+  font-family: var(--font-display);
+  font-size: 2.5rem;
+  color: var(--accent-pink);
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.garden-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.butterfly {
+  font-size: 2rem;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.butterfly:hover {
+  transform: scale(1.5) rotate(10deg);
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: var(--background-dark);
+  border: 2px solid var(--accent-pink);
+  padding: 2rem;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 20px;
+}
+
+.modal p {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.modal button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 20px;
+  background: var(--accent-pink);
+  color: var(--background-dark);
+  cursor: pointer;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .butterfly {
+    font-size: 1.5rem;
+  }
+
+  .modal p {
+    font-size: 1rem;
+  }
+}
