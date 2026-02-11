@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Metamorphosis</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="garden-container">
+    <h1>For my queen Yara ❤️</h1>
+
+    <div class="butterfly" onclick="showCompliment('From the moment I met you, I knew there was something rare about you.')">🦋</div>
+    <div class="butterfly" onclick="showCompliment('You’re genuinely gorgeous. Not just in appearance, but in presence.')">🦋</div>
+    <div class="butterfly" onclick="showCompliment('Your smile shifts moods. It changes rooms.')">🦋</div>
+    <div class="butterfly" onclick="showCompliment('You’re my favorite person. And I don’t say that lightly.')">🦋</div>
+
+    <div id="modal" class="modal">
+      <p id="modal-text"></p>
+      <button onclick="closeModal()">Close</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
